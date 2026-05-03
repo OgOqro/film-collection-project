@@ -57,8 +57,4 @@ export class HomePage {
     const value = (event.target as HTMLInputElement).value;
     this.searchQuery.set(value);
   }
-
-  goToDetail(movie: Movie): void {
-    this.router.navigate(['/movies', movie.id]);
-  }
 }
