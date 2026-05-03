@@ -1,0 +1,25 @@
+<div class="about-page">
+  <button class="back-btn" (click)="goHome()">Back to collection</button>
+
+  <div class="about-hero">
+    <h1 class="about-title">About This App</h1>
+    <p class="about-subtitle">
+      Film Collection is a single-page application built with Angular 20. It lets you browse a
+      collection of films, filter them by genre, search by title, view detailed information for each
+      film, and manage your personal favorites — Created entirely by Angular's modern reactive
+      primitives.
+    </p>
+  </div>
+
+  <div class="concepts-section">
+    <h2 class="concepts-heading">Angular Concepts Used</h2>
+    <div class="concepts-grid">
+      @for (concept of concepts; track concept.title) {
+        <div class="concept-card">
+          <h3 class="concept-title">{{ concept.title }}</h3>
+          <p class="concept-description">{{ concept.description }}</p>
+        </div>
+      }
+    </div>
+  </div>
+</div>

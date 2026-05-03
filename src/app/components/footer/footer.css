@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500&display=swap');
+
+.footer {
+  background: #13161e;
+  border-top: 1px solid #272b38;
+  padding: 1.5rem 2rem;
+  margin-top: auto;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.footer-container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid #272b38;
+}
+
+.footer-section {
+  display: flex;
+  align-items: center;
+}
+
+.copyright,
+.author {
+  margin: 0;
+  font-size: 0.82rem;
+  color: #4a4d58;
+  letter-spacing: 0.02em;
+}
+
+.author-name {
+  color: #f5c842;
+  font-weight: 500;
+}
+
+.github-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  color: #7a7670;
+  text-decoration: none;
+  font-size: 0.82rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 0.4rem 0.9rem;
+  border: 1px solid #2a2d36;
+  border-radius: 6px;
+  transition:
+    color 0.18s,
+    border-color 0.18s;
+}
+
+.github-link:hover {
+  color: #f5c842;
+  border-color: rgba(245, 200, 66, 0.25);
+}
+
+.github-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.footer-bottom {
+  text-align: center;
+}
+
+.footer-note {
+  margin: 0;
+  font-size: 0.75rem;
+  color: #4a4d58;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 640px) {
+  .footer {
+    padding: 1.25rem 1rem;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}

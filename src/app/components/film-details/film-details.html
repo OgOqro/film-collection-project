@@ -1,0 +1,39 @@
+<div class="detail-page">
+  <button class="back-btn" (click)="goBack()">Back to collection</button>
+
+  @if (movie(); as m) {
+    <div class="detail-card">
+      <img [src]="m.posterUrl" [alt]="m.title" class="detail-poster" />
+
+      <div class="detail-content">
+        <h1 class="detail-title">{{ m.title }}</h1>
+
+        <div class="detail-badges">
+          <span class="badge badge-year">{{ m.year }}</span>
+          <span class="badge badge-genre">{{ m.genre }}</span>
+          <span class="badge badge-rating">⭐ {{ m.rating }}</span>
+          <span class="badge badge-duration">⏱️ {{ m.duration | duration }}</span>
+        </div>
+
+        <p class="detail-description">{{ m.description }}</p>
+
+        <div class="detail-footer">
+          <button class="favorite-btn" [class.favorite]="m.isFavorite" (click)="toggleFavorite()">
+            {{ m.isFavorite ? '❤️' : '🤍' }} Favorite
+          </button>
+        </div>
+      </div>
+    </div>
+  }
+
+  @if (!movie()) {
+    <div class="not-found-card">
+      <span class="not-found-icon">🎬</span>
+      <h2 class="not-found-title">Film Not Found</h2>
+      <p class="not-found-message">
+        The film you're looking for doesn't exist or has been removed.
+      </p>
+      <button class="home-btn" (click)="goBack()">Go to Home Page</button>
+    </div>
+  }
+</div>

@@ -1,0 +1,12 @@
+<header class="header">
+  <div class="logo" routerLink="/home" routerLinkActive="active">
+    <span><img [src]="'icons/popcorn.png'" alt="Popcorn Logo" width="50px" /></span>
+    <h1>Film Collection</h1>
+  </div>
+  <nav class="nav-menu">
+    <a routerLink="/home" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"
+      >Home</a
+    >
+    <a routerLink="/about" routerLinkActive="active">About</a>
+  </nav>
+</header>

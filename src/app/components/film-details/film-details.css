@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500&display=swap');
+
+:host {
+  display: block;
+  min-height: 100vh;
+  background-color: #13161e;
+}
+
+.detail-page {
+  background-color: #13161e;
+  color: #e8e4dc;
+  font-family: 'DM Sans', sans-serif;
+  padding: 2.5rem 2rem 4rem;
+  max-width: 1280px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  min-height: 100vh;
+}
+
+.back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: transparent;
+  border: 1px solid #2a2d36;
+  border-radius: 8px;
+  color: #7a7670;
+  cursor: pointer;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  margin-bottom: 2.5rem;
+  transition:
+    border-color 0.18s,
+    color 0.18s;
+}
+
+.back-btn:hover {
+  border-color: #f5c842;
+  color: #f5c842;
+}
+
+.back-arrow {
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.detail-card {
+  display: flex;
+  gap: 2.5rem;
+  background: #1c2030;
+  border: 1px solid #272b38;
+  border-radius: 16px;
+  overflow: hidden;
+  align-items: stretch;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.detail-poster {
+  width: 280px;
+  flex-shrink: 0;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+  display: block;
+}
+
+.detail-content {
+  padding: 2rem 2rem 2rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  flex: 1;
+  min-width: 0;
+  min-height: 100%;
+}
+
+.detail-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  letter-spacing: 0.04em;
+  color: #f5c842;
+  margin: 0;
+  line-height: 1;
+}
+
+.detail-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.badge {
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  padding: 0.3rem 0.75rem;
+  border-radius: 6px;
+}
+
+.badge-year {
+  background: #272b38;
+  color: #7a7670;
+}
+
+.badge-genre {
+  background: rgba(245, 200, 66, 0.1);
+  color: #f5c842;
+}
+
+.badge-rating {
+  background: #272b38;
+  color: #a8c47a;
+}
+
+.badge-duration {
+  background: #272b38;
+  color: #7a7670;
+}
+
+.detail-description {
+  font-size: 0.95rem;
+  line-height: 1.75;
+  color: #a09c94;
+  margin: 0;
+  max-width: 60ch;
+}
+
+.detail-footer {
+  margin-top: auto;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.favorite-btn {
+  background: transparent;
+  border: 1px solid #313645;
+  border-radius: 6px;
+  color: #4a4d58;
+  cursor: pointer;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 0.45rem 1rem;
+  transition:
+    border-color 0.18s,
+    color 0.18s,
+    background 0.18s;
+}
+
+.favorite-btn:hover {
+  border-color: #e05c7a;
+  color: #e05c7a;
+}
+
+.favorite-btn.favorite {
+  background: rgba(224, 92, 122, 0.12);
+  border-color: #e05c7a;
+  color: #e05c7a;
+}
+
+.not-found-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background: #1c2030;
+  border: 1px solid #272b38;
+  border-radius: 16px;
+  padding: 4rem 2rem;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.not-found-icon {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.not-found-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2.5rem;
+  letter-spacing: 0.04em;
+  color: #f5c842;
+  margin: 0;
+}
+
+.not-found-message {
+  font-size: 0.95rem;
+  color: #7a7670;
+  margin: 0;
+  max-width: 36ch;
+  line-height: 1.6;
+}
+
+.home-btn {
+  margin-top: 0.5rem;
+  background: #f5c842;
+  border: none;
+  border-radius: 8px;
+  color: #0d0f14;
+  cursor: pointer;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 0.65rem 1.5rem;
+  transition: opacity 0.18s;
+}
+
+.home-btn:hover {
+  opacity: 0.85;
+}
+
+@media (max-width: 640px) {
+  .detail-page {
+    padding: 1.5rem 1rem 3rem;
+  }
+
+  .detail-card {
+    flex-direction: column;
+  }
+
+  .detail-poster {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    object-position: top;
+  }
+
+  .detail-content {
+    padding: 1.25rem;
+  }
+}
