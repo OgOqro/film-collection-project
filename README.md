@@ -69,11 +69,11 @@ src/
 │   │   ├── header/               # Sticky navigation header
 │   │   ├── footer/               # App footer with GitHub link
 │   │   ├── breadcrumb/           # Reactive breadcrumb navigation
-│   │   └── movie-card/           # Standalone film card component
-│   ├── pages/
 │   │   ├── home-page/            # Film grid with search and filters
-│   │   ├── film-detail/          # Individual film detail view
+│   │   ├── film-details/          # Individual film detail view
 │   │   └── about/                # About page with concepts overview
+│   ├── shared/
+│   │   ├── movie-card/           # Standalone film card component
 │   ├── services/
 │   │   └── movie.service.ts      # Global singleton film state
 │   ├── models/
